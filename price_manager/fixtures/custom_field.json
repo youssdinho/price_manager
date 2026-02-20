@@ -1,0 +1,23 @@
+[
+    {
+        "doctype": "Custom Field",
+        "name": "Price List-marge_defaut",
+        "dt": "Price List",
+        "fieldname": "marge_defaut",
+        "label": "Marge par défaut (%)",
+        "fieldtype": "Float",
+        "insert_after": "currency",
+        "description": "Marge appliquée par défaut à tous les articles de cette liste de prix",
+        "default": "10"
+    },
+    {
+        "doctype": "Custom Field",
+        "name": "Item Price-marge",
+        "dt": "Item Price",
+        "fieldname": "marge",
+        "label": "Marge (%)",
+        "fieldtype": "Float",
+        "insert_after": "price_list_rate",
+        "description": "Marge spécifique pour cet article (surcharge la marge par défaut de la liste)"
+    }
+]
