@@ -5,6 +5,14 @@ app_description = "Gestion automatique des prix de vente"
 app_email = "erpuser@amanatem.local"
 app_license = "mit"
 
+scheduler_events = {
+	"cron": {
+		"0 3 * * *": [
+			"price_manager.doctype_events.scheduled.update_all_prices"
+		]
+	}
+}
+
 doc_events = {
 	"Purchase Invoice": {
 		"on_submit": "price_manager.doctype_events.purchase_invoice.on_submit"
