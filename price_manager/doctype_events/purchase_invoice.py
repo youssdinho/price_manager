@@ -55,7 +55,8 @@ def on_submit(doc, method):
                     "item_code": item_code,
                     "price_list": pl_name,
                     "price_list_rate": round(prix_vente, 2),
-                    "marge": marge
+                    "marge": marge,
+                    "valid_from": "2000-01-01"
                 }).insert(ignore_permissions=True)
 
     frappe.db.commit()

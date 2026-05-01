@@ -18,7 +18,8 @@ def after_insert(doc, method):
             "item_code": doc.name,
             "price_list": pl_name,
             "price_list_rate": 0,
-            "marge": pl_marge_defaut
+            "marge": pl_marge_defaut,
+            "valid_from": "2000-01-01"
         })
         ip.flags.ignore_permissions = True
         ip.flags.ignore_mandatory = True
